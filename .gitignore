@@ -133,3 +133,7 @@ dmypy.json
 
 # ignore csv files
 *.csv
+
+# Training files
+models/
+notebooks/one_step_univariate/
