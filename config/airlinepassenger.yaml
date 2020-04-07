@@ -1,0 +1,13 @@
+# base_dir: wil be set by obligatory argument
+
+# data sets
+raw_data: "data/raw/international-airline-passengers.cs"
+interim_data: "data/interim/international-airline-passengers.csv"
+processed_data: "data/processed/international-airline-passengers.csv"
+
+# models
+
+# scores
+
+
+# visulizations
