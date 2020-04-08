@@ -1,4 +1,5 @@
-# base_dir: wil be set by obligatory argument
+# fill base_dir with a personal absolute path
+base_dir: "/home/marta/airline-passenger-prediction-using-LSTMs/"
 
 # data sets
 raw_data: "data/raw/international-airline-passengers.cs"
@@ -8,6 +9,5 @@ processed_data: "data/processed/international-airline-passengers.csv"
 # models
 
 # scores
-
 
 # visulizations
