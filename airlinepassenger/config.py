@@ -16,3 +16,7 @@ class Configuration:
         self.raw_data = self.base_dir + config["raw_data"]
         self.interim_data = self.base_dir + config["interim_data"]
         self.processed_data = self.base_dir + config["processed_data"]
+
+        self.models = self.base_dir + config["models"]
+        self.scores = self.base_dir + config["scores"]
+        self.plots = self.base_dir + config["plots"]

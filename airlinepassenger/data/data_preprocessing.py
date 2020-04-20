@@ -12,6 +12,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
 # Create interim data set
 def initial_data_preprocessing(data_set):
     data_set.rename(columns={data_set.columns[1]: "passenger_number",
@@ -20,6 +21,7 @@ def initial_data_preprocessing(data_set):
     data_set = data_set[:-1]
     data_set["month"] = data_set["year_month"].apply(lambda x: re.sub("\d\d\d\d-0?", "", x))
     return data_set
+
 
 # Create processed data set
 def interim_data_preprocessing(interim_data_set):
@@ -184,7 +186,7 @@ def make_univariate_dataset(config, input_window_size):
     train_samples, val_samples, test_samples = create_univariate_samples(train_set, validation_set, test_set,
                                                                          input_window_size, 1)
 
-    return train_samples, val_samples, test_samples
+    return train_samples, val_samples, test_samples, scaler
 
 
 # Accomplish entire data preprocessing for multivariate approach
@@ -213,7 +215,8 @@ def make_multivariate_dataset(config, input_window_size):
     passenger_number_scaler, passenger_number_normalized, all_features_normalized = normalize_multivariate_series(
         train_set, validation_set, test_set, features_to_normalize)
 
-    train_samples, val_samples, test_samples = create_multivariate_samples(passenger_number_normalized, all_features_normalized,
-                                                              input_window_size, 1)
+    train_samples, val_samples, test_samples = create_multivariate_samples(passenger_number_normalized,
+                                                                           all_features_normalized,
+                                                                           input_window_size, 1)
 
-    return train_samples, val_samples, test_samples
+    return train_samples, val_samples, test_samples, passenger_number_scaler

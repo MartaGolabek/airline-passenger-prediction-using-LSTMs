@@ -2,12 +2,15 @@
 base_dir: "/home/marta/airline-passenger-prediction-using-LSTMs/"
 
 # data sets
-raw_data: "data/raw/international-airline-passengers.cs"
+raw_data: "data/raw/international-airline-passengers.csv"
 interim_data: "data/interim/international-airline-passengers.csv"
 processed_data: "data/processed/international-airline-passengers.csv"
 
-# models
+# tuning logs and trained models
+models: "models/"
 
 # scores
+scores: "output/scores.csv"
 
 # visulizations
+plots: "output/"
