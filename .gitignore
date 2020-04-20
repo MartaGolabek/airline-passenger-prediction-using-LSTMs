@@ -137,3 +137,4 @@ dmypy.json
 # Training files
 models/
 notebooks/one_step_univariate/
+output/
