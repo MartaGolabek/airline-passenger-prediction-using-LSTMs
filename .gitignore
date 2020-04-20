@@ -135,6 +135,5 @@ dmypy.json
 *.csv
 
 # Training files
-models/
 notebooks/one_step_univariate/
 output/

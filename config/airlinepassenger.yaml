@@ -7,7 +7,7 @@ interim_data: "data/interim/international-airline-passengers.csv"
 processed_data: "data/processed/international-airline-passengers.csv"
 
 # tuning logs and trained models
-models: "models/"
+models: "output/models/"
 
 # scores
 scores: "output/scores.csv"
