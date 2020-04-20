@@ -10,9 +10,8 @@ This project predicts a number of international airline passengers using LSTMs. 
 	
 ## Technologies
 Project is created with:
-* Python: 12.3
-* Conda: ...
-* Keras: 2.33
+* Conda: 4.8.3
+* Python: 3.6.10
 * Check versions of other libraries in environment.yml
 	
 ## Setup
